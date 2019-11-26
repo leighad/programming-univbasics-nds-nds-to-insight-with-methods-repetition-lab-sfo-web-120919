@@ -25,6 +25,7 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
+<<<<<<< HEAD
   names = []
   
   source.each do | person |
@@ -34,6 +35,25 @@ def list_of_directors(source)
   end
   
   names 
+=======
+  # Write this implementation
+  names = []
+  
+  source.each do | key, value |
+    names << key
+    
+    names.each do | key, value |
+      names << value 
+    end
+    
+    # names.each do | key, value |
+    #   names << key[value]
+    # end
+    
+  end
+  names
+  
+>>>>>>> 0ae7b6da53779837af0a5e6f24ae0461fb938cd6
 end
 
 def total_gross(source)
